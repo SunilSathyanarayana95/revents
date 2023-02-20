@@ -1,12 +1,12 @@
 import { Form, Formik } from "formik";
 import React from "react";
-import ModalWrapper from "../../app/common/modals/modalWrapper";
 import * as Yup from "yup";
 import MyTextInput from "../../app/common/form/MyTextInput";
 import { Button } from "semantic-ui-react";
 import { useDispatch } from "react-redux";
 import { closeModal } from "../../app/common/modals/modalReducer";
 import { signInUser } from "./authActions";
+import ModalWrapper from "../../app/common/modals/ModalWrapper";
 
 export default function LoginForm() {
   const dispatch = useDispatch();
